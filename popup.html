@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords"
+    content="chrome, extension, Email,Phone Number,Email domain, search, extraxt, csv, txt, download, copy, send email">
+  <meta name="description"
+    content="EmiPhone will retrieve all hidden emails and phone number in the active page. Copy them, send to email, and export emails and phone numebr list as csv or txt file is possible.">
+  <meta name="author" content="Imadedine Jerbi">
+  <title>EmiPhone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="/scripts/worker.js"></script>
+  <script src="/scripts/popup.js"></script>
+  <script src="/scripts/page.js"></script>
+</head>
+
+<body>
+  <div class="mainHeader">
+    <h1>
+      EmiPhone
+    </h1>
+    <div class="icons">
+      <div>
+        <span id="Phone"></span>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <div>
+        <span id="email"></span>
+        <i class="fa-solid fa-at"></i>
+      </div>
+    </div>
+  </div>
+  <div class="results">
+    <ul id="showResults">
+    </ul>
+  </div>
+  <div class="buttons">
+    <div class="showButtons">
+      <div class="emailButtons">
+        <button id="showEmails">
+          Show Emails
+        </button>
+        <button id="showDomains">
+          Show Domains
+        </button>
+      </div>
+      <div class="emailButtons" style="margin: 5px auto;">
+        <button id="showNumbers" style="width: 80%;">
+          Show Numbers
+        </button>
+      </div>
+    </div>
+    <div class="options">
+      <div id="downloadCsv">
+        <i class="fa-sharp fa-solid fa-file-excel"></i>
+      </div>
+      <div id="downloadTxt">
+        <i class="fa-sharp fa-solid fa-file-lines"></i>
+      </div>
+      <div id="emailAll">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div id="copy">
+        <i class="fa-solid fa-clipboard"></i>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

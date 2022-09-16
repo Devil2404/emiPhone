@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "EmiPhone",
+  "description": "EmiPhone will retrieve all hidden emails and phone number in the active page. Copy them, send to email, and export emails and phone numebr list as csv or txt file is possible.",
+  "version": "1.0.0",
+  "author": "Preet Shah",
+  "icons": {
+    "128": "emiPhone.png"
+  },
+  "browser_action": {
+    "default_icon": "emiPhone.png",
+    "default_popup": "popup.html",
+    "default_title": "EmiPhone"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "/scripts/page.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "/scripts/worker.js",
+      "/scripts/background.js"
+    ]
+  }
+}

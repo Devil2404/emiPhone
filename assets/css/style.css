@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background: #505154;
+  width: 400px;
+  height: max-content;
+  color: #fff;
+}
+
+.mainHeader {
+  width: 90%;
+  border-bottom: 1px solid #fff;
+  margin: 5px auto;
+  padding: 2px;
+  display: flex;
+}
+
+.mainHeader h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 6px;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  letter-spacing: 3px;
+}
+
+.icons {
+  display: flex;
+  width: 10%;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.icons div {
+  height: 20px;
+  word-spacing: 5px;
+}
+
+.results {
+  height: max-content;
+  width: 80%;
+  padding: 2px;
+  margin: auto auto;
+  transition: all .2s ease-in-out;
+}
+
+.results ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: max-content;
+  list-style: none;
+}
+
+.results ul li a,
+.results ul li {
+  text-decoration: none;
+  color: #fff;
+}
+
+.results ul li a:hover {
+  color: #557aea;
+}
+.buttons {
+  width: 100%;
+  height: max-content;
+  padding: 5px 5px;
+}
+.showButtons {
+  width: 90%;
+  margin: auto auto;
+  height: max-content;
+}
+.emailButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.emailButtons button,button{
+  width: 40%;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  letter-spacing:1px;
+  padding: 3px;
+  cursor: pointer;
+}
+.options{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin:auto;
+  margin-top: 10px;
+  height: max-content;
+}
+.options div{
+  width: auto;
+  height: max-content;
+}
+.options div i{
+font-size:2.8em;
+}
+.options div i:hover{
+  cursor: pointer;
+}
+
+
